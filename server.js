@@ -5,7 +5,7 @@
 require("dotenv").config();
 // pull PORT from .env, give default value of 3000
 // pull MONGODB_URL from .env
-const { PORT = 3000, MONGODB_URL } = process.env;
+const { PORT = 4000, MONGODB_URL } = process.env;
 // import express
 const express = require("express");
 // create application object
@@ -106,3 +106,4 @@ app.delete("/people/:id", async (req, res) => {
 // LISTENER
 ////////////////////////////////
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
+
